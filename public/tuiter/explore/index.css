@@ -90,6 +90,7 @@ body {
 .wd-post-photo {
   object-fit: cover;
   width: 100px;
+  min-width: 100px;
   height: 100px;
   border-radius: 20px;
   margin-right: 16px;
