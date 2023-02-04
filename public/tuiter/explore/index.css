@@ -14,8 +14,8 @@ body {
 }
 
 #wd-magnifying-glass {
-  height: 30px;
-  margin: 0 10px;
+  height: 20px;
+  margin: 0 20px;
 }
 
 #wd-settings {
@@ -38,7 +38,7 @@ body {
 
 .wd-search-input-container {
   background-color: rgb(33, 35, 39);
-  border-radius: 15px;
+  border-radius: 25px;
   height: 40px;
   width: 100%;
   display: flex;
@@ -94,6 +94,14 @@ body {
   color: rgb(var(--tuiter-grey));
   margin: 0;
   font-size: 14px;
+}
+
+.wd-profile-icon {
+  height: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+  transform: translateY(14%);
 }
 
 .wd-post {

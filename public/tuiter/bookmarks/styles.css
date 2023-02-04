@@ -108,3 +108,14 @@ body {
   color: rgb(var(--tuiter-grey));
   text-decoration: none;
 }
+
+.wd-actions-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.wd-action {
+  color: rgb(var(--tuiter-grey));
+  text-decoration: none;
+}
