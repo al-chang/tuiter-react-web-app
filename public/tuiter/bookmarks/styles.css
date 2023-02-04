@@ -35,8 +35,10 @@ body {
 }
 
 .wd-tuit-container {
+  border-bottom: 1px solid rgb(var(--tuiter-slate));
   display: flex;
   margin-top: 12px;
+  padding-bottom: 24px;
 }
 
 .wd-profile-photo {
@@ -96,6 +98,7 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  max-width: 75%;
 }
 
 .wd-linked-content-description {
@@ -113,9 +116,20 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
+  max-width: 506px;
 }
 
 .wd-action {
   color: rgb(var(--tuiter-grey));
   text-decoration: none;
+  display: flex;
+}
+
+.wd-heart-active {
+  color: #ff0000;
+}
+
+.wd-action-image {
+  height: 20px;
+  margin-right: 10px;
 }
