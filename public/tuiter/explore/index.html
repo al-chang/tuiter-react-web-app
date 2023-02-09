@@ -16,99 +16,273 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="wd-container wd-search">
-      <div class="wd-search-input-container">
-        <img
-          src="images/magnifying-glass-svgrepo-com.svg"
-          alt="magnifying glass"
-          id="wd-magnifying-glass"
-        />
-        <input
-          type="text"
-          class="wd-search-input"
-          placeholder="Search Tuiter"
-        />
-      </div>
-      <a href="explore-settings.html">
-        <img src="images/gear-svgrepo-com.svg" alt="gear" id="wd-settings" />
-      </a>
-    </div>
-    <div class="wd-container wd-tab-group">
-      <a href="" class="wd-tab wd-active-tab">For you</a>
-      <a href="" class="wd-tab">Trending</a>
-      <a href="" class="wd-tab">COVID-19</a>
-      <a href="" class="wd-tab">News</a>
-      <a href="" class="wd-tab">Sports</a>
-      <a href="" class="wd-tab">Entertainment</a>
-    </div>
-    <div class="wd-container wd-bordered">
-      <div class="wd-trending">
-        <p class="wd-trending-sub-header">Trending in Science</p>
-        <h3 class="wd-trending-header">Starship</h3>
-        <p class="wd-trending-sub-header">55.5K Tweets</p>
-      </div>
-      <div class="wd-trending">
-        <p class="wd-trending-sub-header">Sports &middot Trending</p>
-        <h3 class="wd-trending-header">World Cup</h3>
-        <p class="wd-trending-sub-header">5,218 Tweets</p>
-      </div>
-    </div>
-    <div class="wd-container wd-bordered wd-trending wd-post">
-      <div>
-        <p class="wd-trending-sub-header">
-          <img
-            src="images/nyt.png"
-            alt="magnifying glass"
-            class="wd-profile-icon"
-          />
-          <span class="wd-post-author">The New York Times</span>
-          &middot Yesterday
-        </p>
-        <h3 class="wd-trending-header">
-          Some Random News Headline About Current Events
-        </h3>
-      </div>
-      <img
-        src="images/dog-reading.avif"
-        alt="dog with glasses doing homework"
-        class="wd-post-photo"
-      />
-    </div>
-    <div class="wd-container wd-bordered wd-trending wd-post">
-      <div>
-        <p class="wd-trending-sub-header">
-          <img
-            src="images/cnn.webp"
-            alt="magnifying glass"
-            class="wd-profile-icon"
-          />
-          <span class="wd-post-author">CNN</span>
-          &middot Yesterday
-        </p>
-        <h3 class="wd-trending-header">
-          Some Random News Headline About Current Events with a Really Long Name
-        </h3>
-      </div>
-      <img
-        src="images/cat-with-glasses.avif"
-        alt="cool cat"
-        class="wd-post-photo"
-      />
-    </div>
-    <div class="wd-container wd-bordered wd-trending wd-post">
-      <div>
-        <p class="wd-trending-sub-header">COVID-19 &middot LIVE</p>
-        <h3 class="wd-trending-header">
-          Some Random News Headline About Current Events
-        </h3>
-      </div>
-      <img src="images/baby-racoon.avif" alt="racoon" class="wd-post-photo" />
-    </div>
-    <div class="wd-container wd-bordered">
-      <div class="wd-trending">
-        <p class="wd-trending-sub-header">Trending in Politics</p>
-        <h3 class="wd-trending-header">Another Trending Topic</h3>
-        <p class="wd-trending-sub-header">1.7B Tweets</p>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-xl-2 col-lg-1 col-3">
+          <ul class="list-group">
+            <li class="list-group-item text-center text-xl-start">
+              <a href="" class="text-decoration-none text-dark">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-group-item text-center text-xl-start">
+              <a href="" class="text-decoration-none text-dark">
+                <i class="fas fa-home"></i>
+                <span class="d-none d-xl-inline">Home</span>
+              </a>
+            </li>
+            <li class="list-group-item text-center text-xl-start active">
+              <a href="" class="text-decoration-none text-light">
+                <i class="fa fa-solid fa-hashtag"></i>
+                <span class="d-none d-xl-inline">Explore</span>
+              </a>
+            </li>
+            <li class="list-group-item text-center text-xl-start">
+              <a href="" class="text-decoration-none text-dark">
+                <i class="fa fa-solid fa-bell"></i>
+                <span class="d-none d-xl-inline">Notifications</span>
+              </a>
+            </li>
+            <li class="list-group-item text-center text-xl-start">
+              <a href="" class="text-decoration-none text-dark">
+                <i class="fas fa-envelope"></i>
+                <span class="d-none d-xl-inline">Messages</span>
+              </a>
+            </li>
+            <li class="list-group-item text-center text-xl-start">
+              <a href="" class="text-decoration-none text-dark">
+                <i class="fas fa-bookmark"></i>
+                <span class="d-none d-xl-inline">Bookmarks</span>
+              </a>
+            </li>
+            <li class="list-group-item text-center text-xl-start">
+              <a href="" class="text-decoration-none text-dark">
+                <i class="fas fa-list"></i>
+                <span class="d-none d-xl-inline">Lists</span>
+              </a>
+            </li>
+            <li class="list-group-item text-center text-xl-start">
+              <a href="" class="text-decoration-none text-dark">
+                <i class="fas fa-user"></i>
+                <span class="d-none d-xl-inline">Profile</span>
+              </a>
+            </li>
+            <li class="list-group-item text-center text-xl-start">
+              <a href="" class="text-decoration-none text-dark">
+                <i class="fas fa-ellipsis-h"></i>
+                <span class="d-none d-xl-inline">More</span>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary rounded-pill w-100 mt-1">
+            Tuit
+          </button>
+        </div>
+        <div class="col-xl-7 col-lg-8 col-9">
+          <div class="d-flex justify-content-between align-items-center">
+            <div
+              class="w-100 border border-grey rounded-pill me-4 p-2 d-flex align-items-center"
+            >
+              <i class="fa far fa-search h-100"></i>
+              <input placeholder="Search Tuiter" class="ms-2 border-0 w-100" />
+            </div>
+            <a href="explore-settings.html">
+              <i class="fas fa-cog fa-2x" style="color: #0d6efd"></i>
+            </a>
+          </div>
+          <ul class="nav nav-tabs mt-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">For you</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entertainment</a>
+            </li>
+          </ul>
+          <div class="wd-cover-image w-100 position-relative mt-1">
+            <h3 class="wd-cover-text position-absolute text-white fw-bold">
+              SpaceX's Startship
+            </h3>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <p class="m-0 text-secondary">Web Development</p>
+                <p class="fw-bold m-0">
+                  ReactJS
+                  <span class="fw-normal text-secondary">- 2h</span>
+                </p>
+                <p class="fw-bold m-0">
+                  React.js is a component based front end library that makes it
+                  very easy to build Single Page Applications or SPAs
+                </p>
+              </div>
+              <img
+                src="../../images/react.png"
+                alt="react"
+                class="wd-tweet-image rounded"
+              />
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <p class="fw-bold m-0">
+                  JavaScript
+                  <span class="fw-normal text-secondary">- 2h</span>
+                </p>
+                <p class="fw-bold m-0">
+                  JavaScript is a programming langauge that can run on browsers
+                  as well as desktops
+                </p>
+                <p class="m-0 text-secondary">123k Tuits</p>
+              </div>
+              <img
+                src="../../images/javascript.png"
+                alt="react"
+                class="wd-tweet-image rounded"
+              />
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <p class="m-0 text-secondary">Web Development</p>
+                <p class="fw-bold m-0">jQuery</p>
+                <p class="text-secondary m-0">123k Tuits</p>
+              </div>
+              <img
+                src="../../images/jquery.png"
+                alt="react"
+                class="wd-tweet-image rounded"
+              />
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <p class="m-0 text-secondary">Web Development</p>
+                <p class="fw-bold m-0">
+                  NodeJS
+                  <span class="text-secondary fw-normal">- 2h</span>
+                </p>
+                <p class="text-secondary m-0">123k Tuits</p>
+              </div>
+              <img
+                src="../../images/nodejs.png"
+                alt="react"
+                class="wd-tweet-image rounded"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 d-lg-block d-none">
+          <ul class="list-group">
+            <li class="list-group-item fw-bold">Who to follow</li>
+            <li class="list-group-item p-0">
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <div class="d-flex justify-content-between align-items-center">
+                  <img
+                    src="images/cnn.webp"
+                    alt="cnn"
+                    class="wd-profile-image rounded-circle"
+                  />
+                  <div class="d-inline-block ps-1">
+                    <p class="m-0 fw-bold">CNN</p>
+                    <p class="m-0 text-secondary">@CNN</p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded-pill">
+                  Follow
+                </button>
+              </div>
+            </li>
+            <li class="list-group-item p-0">
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <div class="d-flex justify-content-between align-items-center">
+                  <img
+                    src="images/java.png"
+                    alt="java"
+                    class="wd-profile-image rounded-circle"
+                  />
+                  <div class="d-inline-block ps-1">
+                    <p class="m-0 fw-bold">Java</p>
+                    <p class="m-0 text-secondary">@Java</p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded-pill">
+                  Follow
+                </button>
+              </div>
+            </li>
+            <li class="list-group-item p-0">
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <div class="d-flex justify-content-between align-items-center">
+                  <img
+                    src="images/nyt.png"
+                    alt="nyt"
+                    class="wd-profile-image rounded-circle"
+                  />
+                  <div class="d-inline-block ps-1">
+                    <p class="m-0 fw-bold">New York Times</p>
+                    <p class="m-0 text-secondary">@nyt</p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded-pill">
+                  Follow
+                </button>
+              </div>
+            </li>
+            <li class="list-group-item p-0">
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <div class="d-flex justify-content-between align-items-center">
+                  <img
+                    src="images/nyancat.webp"
+                    alt="nyancat"
+                    class="wd-profile-image rounded-circle"
+                  />
+                  <div class="d-inline-block ps-1">
+                    <p class="m-0 fw-bold">Nyan Cat</p>
+                    <p class="m-0 text-secondary">@meowmeowmeow</p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded-pill">
+                  Follow
+                </button>
+              </div>
+            </li>
+            <li class="list-group-item p-0">
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <div class="d-flex justify-content-between align-items-center">
+                  <img
+                    src="images/rick-astley.jpg"
+                    alt="rick-astley"
+                    class="wd-profile-image rounded-circle"
+                  />
+                  <div class="d-inline-block ps-1">
+                    <p class="m-0 fw-bold">Never Gonna</p>
+                    <p class="m-0 text-secondary">@GiveYouUp</p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded-pill">
+                  Follow
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
