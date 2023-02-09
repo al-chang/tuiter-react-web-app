@@ -6,7 +6,7 @@
 
 .wd-cover-image {
   background-image: url("../../images/starship.avif");
-  height: 350px;
+  height: 45vh;
   background-size: cover;
   background-position: center;
 }
