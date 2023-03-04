@@ -16,7 +16,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           }`}
         >
           <a
-            href=""
+            href="/"
             className={`text-decoration-none ${
               active === "home" ? "text-white" : "text-dark"
             }`}
@@ -31,7 +31,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           }`}
         >
           <a
-            href=""
+            href="/"
             className={`text-decoration-none ${
               active === "explore" ? "text-white" : "text-dark"
             }`}
@@ -46,7 +46,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           }`}
         >
           <a
-            href=""
+            href="/"
             className={`text-decoration-none ${
               active === "notifications" ? "text-white" : "text-dark"
             }`}
@@ -61,7 +61,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           }`}
         >
           <a
-            href=""
+            href="/"
             className={`text-decoration-none ${
               active === "messages" ? "text-white" : "text-dark"
             }`}
@@ -76,7 +76,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           }`}
         >
           <a
-            href=""
+            href="/"
             className={`text-decoration-none ${
               active === "bookmarks" ? "text-white" : "text-dark"
             }`}
@@ -91,7 +91,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           }`}
         >
           <a
-            href=""
+            href="/"
             className={`text-decoration-none ${
               active === "lists" ? "text-white" : "text-dark"
             }`}
@@ -106,7 +106,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           }`}
         >
           <a
-            href=""
+            href="/"
             className={`text-decoration-none ${
               active === "profile" ? "text-white" : "text-dark"
             }`}
@@ -121,7 +121,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           }`}
         >
           <a
-            href=""
+            href="/"
             className={`text-decoration-none ${
               active === "more" ? "text-white" : "text-dark"
             }`}
