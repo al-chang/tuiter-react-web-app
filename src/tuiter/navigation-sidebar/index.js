@@ -1,44 +1,47 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
-const NavigationSidebar = ({ active = "explore" }) => {
+const NavigationSidebar = () => {
+  const location = useLocation();
+  const active = location.pathname.split("/")[2];
   return (
     <>
       <ul className="list-group">
         <li className={`list-group-item text-center text-xl-start`}>
-          <a href="/" className="text-decoration-none text-dark">
+          <Link to="/tuiter/explore" className="text-decoration-none text-dark">
             <i className="fab fa-twitter"></i>
             <span className="d-none d-xl-inline">Tuiter</span>
-          </a>
+          </Link>
         </li>
         <li
           className={`list-group-item text-center text-xl-start ${
             active === "home" ? "active" : ""
           }`}
         >
-          <a
-            href="/"
+          <Link
+            to="/tuiter/home"
             className={`text-decoration-none ${
               active === "home" ? "text-white" : "text-dark"
             }`}
           >
             <i className="fas fa-home"></i>
             <span className="d-none d-xl-inline">Home</span>
-          </a>
+          </Link>
         </li>
         <li
           className={`list-group-item text-center text-xl-start ${
-            active === "explore" ? "active" : ""
+            active === "explore" || active === "" ? "active" : ""
           }`}
         >
-          <a
-            href="/"
+          <Link
+            to="/tuiter/explore"
             className={`text-decoration-none ${
-              active === "explore" ? "text-white" : "text-dark"
+              active === "explore" || active === "" ? "text-white" : "text-dark"
             }`}
           >
             <i className="fa fa-solid fa-hashtag"></i>
             <span className="d-none d-xl-inline">Explore</span>
-          </a>
+          </Link>
         </li>
         <li
           className={`list-group-item text-center text-xl-start ${
