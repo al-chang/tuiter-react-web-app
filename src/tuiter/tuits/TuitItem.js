@@ -13,18 +13,30 @@ const TuitItem = ({
   },
 }) => {
   return (
-    <li className="list-group-item d-flex justify-content-between">
-      <div className="d-flex flex-column">
-        <p className="m-0 text-secondary">{post.topic}</p>
-        <p className="fw-bold m-0">
-          {post.userName}
-          <i className="fas fa-check-circle"></i>
-          <span className="fw-normal text-secondary">- {post.time}</span>
-        </p>
-        <p className="fw-bold m-0">{post.title}</p>
+    <li className="list-group-item d-flex">
+      <div className="w-10 me-4">
+        <img
+          src={post.image}
+          alt="profile"
+          className="wd-profile-image rounded-circle"
+        />
       </div>
-      <img src={post.image} className="wd-tweet-image rounded" alt="tweet" />
-      <TuitStats />
+      <div>
+        <div className="d-inline-block">
+          <p className="m-0 fw-bold d-inline-block">
+            {post.userName}
+            <i className="fas ms-1 fa-check-circle"></i>
+          </p>
+          <p className="m-0 ms-1 text-secondary d-inline-block">
+            {post.handle}
+          </p>
+          <p className="m-0 ms-1 text-secondary d-inline-block">
+            \00B7 {post.time}
+          </p>
+        </div>
+        <p>{post.tuit}</p>
+        <TuitStats {...post} />
+      </div>
     </li>
   );
 };
