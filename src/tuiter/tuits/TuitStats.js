@@ -1,6 +1,13 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { likeTuit } from "./tuits-reducer";
 
-const TuitStats = ({ replies, retuits, likes, liked }) => {
+const TuitStats = ({ _id, replies, retuits, likes, liked }) => {
+  const dispatch = useDispatch();
+  const likeTuitHandler = () => {
+    dispatch(likeTuit(_id));
+  };
+
   return (
     <div className="row">
       <div className="col">
@@ -16,7 +23,11 @@ const TuitStats = ({ replies, retuits, likes, liked }) => {
         </button>
       </div>
       <div className="col">
-        <button className="btn p-0 d-flex align-items-center" type="button">
+        <button
+          className="btn p-0 d-flex align-items-center"
+          type="button"
+          onClick={likeTuitHandler}
+        >
           <i className={`fa-heart ${liked ? "red-icon fas" : "far"}`}></i>
           <span className="ms-1">{likes}</span>
         </button>
