@@ -1,5 +1,5 @@
 import React from "react";
-import who from "./who.json";
+import who from "../data/who.json";
 import WhoToFollowListItem from "./who-to-follow-list-item";
 
 const WhoToFollowList = () => {
