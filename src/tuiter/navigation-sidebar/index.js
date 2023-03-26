@@ -8,20 +8,20 @@ const NavigationSidebar = () => {
     <>
       <ul className="list-group">
         <li className={`list-group-item text-center text-xl-start`}>
-          <Link to="/tuiter/explore" className="text-decoration-none text-dark">
+          <Link to="/tuiter" className="text-decoration-none text-dark">
             <i className="fab fa-twitter"></i>
             <span className="d-none d-xl-inline">Tuiter</span>
           </Link>
         </li>
         <li
           className={`list-group-item text-center text-xl-start ${
-            active === "home" ? "active" : ""
+            active === undefined || active === "" ? "active" : ""
           }`}
         >
           <Link
-            to="/tuiter/home"
+            to="/tuiter"
             className={`text-decoration-none ${
-              active === "home" ? "text-white" : "text-dark"
+              active === undefined || active === "" ? "text-white" : "text-dark"
             }`}
           >
             <i className="fas fa-home"></i>
@@ -30,13 +30,13 @@ const NavigationSidebar = () => {
         </li>
         <li
           className={`list-group-item text-center text-xl-start ${
-            active === "explore" || active === "" ? "active" : ""
+            active === "explore" ? "active" : ""
           }`}
         >
           <Link
             to="/tuiter/explore"
             className={`text-decoration-none ${
-              active === "explore" || active === "" ? "text-white" : "text-dark"
+              active === "explore" ? "text-white" : "text-dark"
             }`}
           >
             <i className="fa fa-solid fa-hashtag"></i>

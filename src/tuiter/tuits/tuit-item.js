@@ -1,17 +1,15 @@
 import React from "react";
 import "./tuit-item.css";
 import TuitStats from "./TuitStats";
+import { useDispatch } from "react-redux";
+import { deleteTuit } from "./tuits-reducer";
 
-const TuitItem = ({
-  post = {
-    topic: "Space",
-    userName: "SpaceX",
-    time: "2h",
-    title:
-      "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-    image: "tesla.png",
-  },
-}) => {
+const TuitItem = ({ post }) => {
+  const dispatch = useDispatch();
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuit(id));
+  };
+
   return (
     <li className="list-group-item d-flex">
       <div className="w-10 me-4">
@@ -21,7 +19,11 @@ const TuitItem = ({
           className="wd-profile-image rounded-circle"
         />
       </div>
-      <div>
+      <div className="w-100">
+        <i
+          className="bi bi-x-lg float-end"
+          onClick={() => deleteTuitHandler(post._id)}
+        ></i>
         <div className="d-inline-block">
           <p className="m-0 fw-bold d-inline-block">
             {post.userName}
