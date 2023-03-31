@@ -1,35 +1,34 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { likeTuit } from "./tuits-reducer";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
-const TuitStats = ({ _id, replies, retuits, likes, liked }) => {
+const TuitStats = (tuit) => {
   const dispatch = useDispatch();
-  const likeTuitHandler = () => {
-    dispatch(likeTuit(_id));
-  };
 
   return (
     <div className="row">
       <div className="col">
         <button className="btn p-0 d-flex align-items-center" type="button">
           <i className="far fa-comment"></i>
-          <span className="ms-1">{replies}</span>
+          <span className="ms-1">{tuit.replies}</span>
         </button>
       </div>
       <div className="col">
         <button className="btn p-0 d-flex align-items-center" type="button">
           <i className="fas fa-retweet"></i>
-          <span className="ms-1">{retuits}</span>
+          <span className="ms-1">{tuit.retuits}</span>
         </button>
       </div>
       <div className="col">
         <button
           className="btn p-0 d-flex align-items-center"
           type="button"
-          onClick={likeTuitHandler}
+          onClick={() =>
+            dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
+          }
         >
-          <i className={`fa-heart ${liked ? "red-icon fas" : "far"}`}></i>
-          <span className="ms-1">{likes}</span>
+          <i className={`fa-heart ${tuit.liked ? "red-icon fas" : "far"}`}></i>
+          <span className="ms-1">{tuit.likes}</span>
         </button>
       </div>
       <div className="col">
