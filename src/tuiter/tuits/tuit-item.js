@@ -9,6 +9,7 @@ const TuitItem = ({ post }) => {
   const deleteTuitHandler = (id) => {
     dispatch(deleteTuitThunk(id));
   };
+  console.log(post);
 
   return (
     <li className="list-group-item d-flex">
@@ -26,14 +27,14 @@ const TuitItem = ({ post }) => {
         ></i>
         <div className="d-inline-block">
           <p className="m-0 fw-bold d-inline-block">
-            {post.userName}
+            {post.username}
             <i className="fas ms-1 fa-check-circle"></i>
           </p>
           <p className="m-0 ms-1 text-secondary d-inline-block">
             {post.handle}
           </p>
           <p className="m-0 ms-1 text-secondary d-inline-block">
-            \00B7 {post.time}
+            {String.fromCharCode(183)} {post.time}
           </p>
         </div>
         <p>{post.tuit}</p>
