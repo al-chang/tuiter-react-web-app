@@ -9,13 +9,12 @@ const TuitItem = ({ post }) => {
   const deleteTuitHandler = (id) => {
     dispatch(deleteTuitThunk(id));
   };
-  console.log(post);
 
   return (
     <li className="list-group-item d-flex">
       <div className="w-10 me-4">
         <img
-          src={post.image}
+          src={`/images/${post.image}`}
           alt="profile"
           className="wd-profile-image rounded-circle"
         />

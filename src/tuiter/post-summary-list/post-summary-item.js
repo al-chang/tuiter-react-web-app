@@ -16,13 +16,17 @@ const PostSummaryItem = ({
       <div className="d-flex flex-column">
         <p className="m-0 text-secondary">{post.topic}</p>
         <p className="fw-bold m-0">
-          {post.userName}
+          {post.username}
           <i className="fas fa-check-circle"></i>
           <span className="fw-normal text-secondary">- {post.time}</span>
         </p>
         <p className="fw-bold m-0">{post.title}</p>
       </div>
-      <img src={post.image} className="wd-tweet-image rounded" alt="tweet" />
+      <img
+        src={`/images/${post.image}`}
+        className="wd-tweet-image rounded"
+        alt="tweet"
+      />
     </li>
   );
 };
