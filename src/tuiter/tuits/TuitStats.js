@@ -24,7 +24,13 @@ const TuitStats = (tuit) => {
           className="btn p-0 d-flex align-items-center"
           type="button"
           onClick={() =>
-            dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
+            dispatch(
+              updateTuitThunk({
+                ...tuit,
+                likes: tuit.likes + (tuit.liked ? -1 : 1),
+                liked: !tuit.liked ? true : false,
+              })
+            )
           }
         >
           <i className={`fa-heart ${tuit.liked ? "red-icon fas" : "far"}`}></i>
